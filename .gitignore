@@ -1,1 +1,4 @@
 .Rproj.user
+data/processed/matched_methylation.tsv
+data/processed/matched_mrna.tsv
+data/raw/

@@ -1,4 +1,25 @@
-.Rproj.user
-data/processed/matched_methylation.tsv
-data/processed/matched_mrna.tsv
-data/raw/
+# R / RStudio
+.Rhistory
+.RData
+.Ruserdata
+.Rproj.user/
+
+# Large data files - keep locally only
+data/raw/*
+data/processed/*.rds
+data/processed/*.tsv
+data/processed/*.xlsx
+data/processed/*.csv
+
+# Keep folder structure and data instructions
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+!data/README.md
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.log

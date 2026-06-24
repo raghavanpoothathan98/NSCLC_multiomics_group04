@@ -1,0 +1,49 @@
+layer	model	actual	predicted	Freq	result	actual_class_total	percent_within_actual	interpretation	label
+DNA methylation	Elastic net	LUAD	LUAD	311	Correct	316	98.4	LUAD correctly classified	311
+98.4%
+DNA methylation	Elastic net	LUSC	LUAD	20	Wrong	251	8	LUSC misclassified as LUAD	20
+8%
+DNA methylation	Elastic net	LUAD	LUSC	5	Wrong	316	1.6	LUAD misclassified as LUSC	5
+1.6%
+DNA methylation	Elastic net	LUSC	LUSC	231	Correct	251	92	LUSC correctly classified	231
+92%
+DNA methylation	Random forest	LUAD	LUAD	313	Correct	316	99.1	LUAD correctly classified	313
+99.1%
+DNA methylation	Random forest	LUSC	LUAD	4	Wrong	251	1.6	LUSC misclassified as LUAD	4
+1.6%
+DNA methylation	Random forest	LUAD	LUSC	3	Wrong	316	0.9	LUAD misclassified as LUSC	3
+0.9%
+DNA methylation	Random forest	LUSC	LUSC	247	Correct	251	98.4	LUSC correctly classified	247
+98.4%
+RPPA	Elastic net	LUAD	LUAD	303	Correct	316	95.9	LUAD correctly classified	303
+95.9%
+RPPA	Elastic net	LUSC	LUAD	25	Wrong	251	10	LUSC misclassified as LUAD	25
+10%
+RPPA	Elastic net	LUAD	LUSC	13	Wrong	316	4.1	LUAD misclassified as LUSC	13
+4.1%
+RPPA	Elastic net	LUSC	LUSC	226	Correct	251	90	LUSC correctly classified	226
+90%
+RPPA	Random forest	LUAD	LUAD	298	Correct	316	94.3	LUAD correctly classified	298
+94.3%
+RPPA	Random forest	LUSC	LUAD	39	Wrong	251	15.5	LUSC misclassified as LUAD	39
+15.5%
+RPPA	Random forest	LUAD	LUSC	18	Wrong	316	5.7	LUAD misclassified as LUSC	18
+5.7%
+RPPA	Random forest	LUSC	LUSC	212	Correct	251	84.5	LUSC correctly classified	212
+84.5%
+mRNA	Elastic net	LUAD	LUAD	310	Correct	316	98.1	LUAD correctly classified	310
+98.1%
+mRNA	Elastic net	LUSC	LUAD	21	Wrong	251	8.4	LUSC misclassified as LUAD	21
+8.4%
+mRNA	Elastic net	LUAD	LUSC	6	Wrong	316	1.9	LUAD misclassified as LUSC	6
+1.9%
+mRNA	Elastic net	LUSC	LUSC	230	Correct	251	91.6	LUSC correctly classified	230
+91.6%
+mRNA	Random forest	LUAD	LUAD	310	Correct	316	98.1	LUAD correctly classified	310
+98.1%
+mRNA	Random forest	LUSC	LUAD	18	Wrong	251	7.2	LUSC misclassified as LUAD	18
+7.2%
+mRNA	Random forest	LUAD	LUSC	6	Wrong	316	1.9	LUAD misclassified as LUSC	6
+1.9%
+mRNA	Random forest	LUSC	LUSC	233	Correct	251	92.8	LUSC correctly classified	233
+92.8%

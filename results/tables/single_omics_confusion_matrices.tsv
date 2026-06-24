@@ -1,0 +1,25 @@
+layer	model	actual	predicted	Freq
+DNA methylation	Elastic net	LUAD	LUAD	311
+DNA methylation	Elastic net	LUSC	LUAD	20
+DNA methylation	Elastic net	LUAD	LUSC	5
+DNA methylation	Elastic net	LUSC	LUSC	231
+DNA methylation	Random forest	LUAD	LUAD	313
+DNA methylation	Random forest	LUSC	LUAD	4
+DNA methylation	Random forest	LUAD	LUSC	3
+DNA methylation	Random forest	LUSC	LUSC	247
+RPPA	Elastic net	LUAD	LUAD	303
+RPPA	Elastic net	LUSC	LUAD	25
+RPPA	Elastic net	LUAD	LUSC	13
+RPPA	Elastic net	LUSC	LUSC	226
+RPPA	Random forest	LUAD	LUAD	298
+RPPA	Random forest	LUSC	LUAD	39
+RPPA	Random forest	LUAD	LUSC	18
+RPPA	Random forest	LUSC	LUSC	212
+mRNA	Elastic net	LUAD	LUAD	310
+mRNA	Elastic net	LUSC	LUAD	21
+mRNA	Elastic net	LUAD	LUSC	6
+mRNA	Elastic net	LUSC	LUSC	230
+mRNA	Random forest	LUAD	LUAD	310
+mRNA	Random forest	LUSC	LUAD	18
+mRNA	Random forest	LUAD	LUSC	6
+mRNA	Random forest	LUSC	LUSC	233

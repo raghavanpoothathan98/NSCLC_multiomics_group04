@@ -16,7 +16,8 @@ packages <- c(
   "ggplot2",
   "readr",
   "matrixStats",
-  "stringr"
+  "stringr",
+  "scales"
 )
 
 installed <- packages %in% rownames(installed.packages())

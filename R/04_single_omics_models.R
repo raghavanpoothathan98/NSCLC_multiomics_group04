@@ -442,7 +442,7 @@ fit_random_forest_fold <- function(
     probability = TRUE,
     num.trees = rf_num_trees,
     mtry      = mtry_value,
-    importance = "impurity",
+    importance = "permutation",
     seed      = seed + 1000 + fold_id
   )
   

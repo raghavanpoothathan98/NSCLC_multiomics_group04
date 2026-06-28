@@ -1,136 +1,154 @@
 ############################################################
 # 02_preprocessing.R
-# QC filtering, missingness summary, imputation and feature filtering
+# Leakage-aware preprocessing and basic QC
+# NSCLC multi-omics project: LUAD vs LUSC
+#
+# Input:
+#   data/processed/01_loaded_matched_data.rds
+#
+# Output:
+#   data/processed/02_qc_model_input_unimputed.rds
+#
+# This script does:
+#   - loads matched labels, metadata, mRNA, methylation, RPPA
+#   - checks sample alignment
+#   - summarizes missingness and variance
+#   - removes high-missingness features
+#   - removes zero/invalid variance features
+#   - identifies candidate batch/source variables from metadata
+#
+# This script does NOT do:
+#   - raw file loading
+#   - sample matching
+#   - global imputation
+#   - global scaling
+#   - global top-variable feature selection
+#   - supervised feature selection
+#   - batch correction
+#
+# Final modelling scripts must perform:
+#   - imputation
+#   - scaling
+#   - top-variable filtering
+#   - supervised feature selection
+# inside each cross-validation training fold.
 ############################################################
 
 # -----------------------------
-# 1. Setup and load data
+# 1. Setup and load matched data
 # -----------------------------
 
 source("R/00_setup.R")
 
-loaded_data <- readRDS(
-  file.path(processed_dir, "01_loaded_matched_data.rds")
-)
+loaded_rds_path <- file.path(processed_dir, "01_loaded_matched_data.rds")
+
+if (!file.exists(loaded_rds_path)) {
+  stop(
+    "01_loaded_matched_data.rds not found.\n",
+    "Run source('R/01_load_data.R') first."
+  )
+}
+
+loaded_data <- readRDS(loaded_rds_path)
 
 labels <- loaded_data$labels
+metadata <- loaded_data$metadata
 mrna <- loaded_data$mrna
 methylation <- loaded_data$methylation
 rppa <- loaded_data$rppa
+
+labels$sample_id <- as.character(labels$sample_id)
+labels$subtype <- factor(labels$subtype, levels = c("LUAD", "LUSC"))
+
+if (is.null(metadata)) {
+  stop(
+    "No metadata found inside 01_loaded_matched_data.rds.\n",
+    "Update and rerun R/01_load_data.R so it saves matched metadata."
+  )
+}
+
+metadata$sample_id <- as.character(metadata$sample_id)
+
+# Ensure metadata has subtype
+metadata <- metadata %>%
+  dplyr::select(-dplyr::any_of("subtype")) %>%
+  dplyr::left_join(labels, by = "sample_id") %>%
+  dplyr::arrange(match(sample_id, labels$sample_id))
+
+# Check sample order
+stopifnot(identical(labels$sample_id, metadata$sample_id))
+stopifnot(identical(labels$sample_id, rownames(mrna)))
+stopifnot(identical(labels$sample_id, rownames(methylation)))
+stopifnot(identical(labels$sample_id, rownames(rppa)))
+
+message("Loaded matched data successfully.")
+message("Samples: ", nrow(labels))
+message("mRNA features: ", ncol(mrna))
+message("DNA methylation features: ", ncol(methylation))
+message("RPPA features: ", ncol(rppa))
 
 # -----------------------------
 # 2. Helper functions
 # -----------------------------
 
 summarize_matrix <- function(mat, layer_name) {
-  feature_missing <- colMeans(is.na(mat)) * 100
-  sample_missing <- rowMeans(is.na(mat)) * 100
+  feature_missing_percent <- colMeans(is.na(mat)) * 100
+  sample_missing_percent <- rowMeans(is.na(mat)) * 100
   feature_var <- matrixStats::colVars(mat, na.rm = TRUE)
   
   tibble::tibble(
     layer = layer_name,
     samples = nrow(mat),
     features = ncol(mat),
-    total_values = nrow(mat) * ncol(mat),
+    total_values = as.numeric(nrow(mat)) * as.numeric(ncol(mat)),
     missing_values = sum(is.na(mat)),
     missing_percent = round(mean(is.na(mat)) * 100, 4),
-    features_with_missing = sum(feature_missing > 0),
-    max_feature_missing_percent = round(max(feature_missing, na.rm = TRUE), 4),
-    max_sample_missing_percent = round(max(sample_missing, na.rm = TRUE), 4),
+    features_with_missing = sum(feature_missing_percent > 0),
+    max_feature_missing_percent = round(max(feature_missing_percent, na.rm = TRUE), 4),
+    max_sample_missing_percent = round(max(sample_missing_percent, na.rm = TRUE), 4),
     zero_or_invalid_variance_features = sum(is.na(feature_var) | feature_var == 0)
   )
 }
 
-filter_qc_features <- function(mat, layer_name, max_missing = 0.20) {
-  message("\nQC filtering: ", layer_name)
+basic_qc_filter <- function(mat, layer_name, max_missing = 0.20) {
+  message("\nBasic QC filtering: ", layer_name)
   
-  missing_prop <- colMeans(is.na(mat))
+  feature_missing_prop <- colMeans(is.na(mat))
   feature_var <- matrixStats::colVars(mat, na.rm = TRUE)
   
-  keep <- missing_prop <= max_missing &
+  keep <- feature_missing_prop <= max_missing &
     !is.na(feature_var) &
     feature_var > 0
   
-  filtered <- mat[, keep, drop = FALSE]
+  filtered_mat <- mat[, keep, drop = FALSE]
+  
+  removed_high_missing <- sum(feature_missing_prop > max_missing, na.rm = TRUE)
+  removed_zero_or_invalid_var <- sum(is.na(feature_var) | feature_var == 0)
   
   summary <- tibble::tibble(
     layer = layer_name,
     features_before = ncol(mat),
-    features_after_qc = ncol(filtered),
-    removed_features = ncol(mat) - ncol(filtered),
-    removed_percent = round((ncol(mat) - ncol(filtered)) / ncol(mat) * 100, 4),
+    features_after_basic_qc = ncol(filtered_mat),
+    removed_features_total = ncol(mat) - ncol(filtered_mat),
+    removed_percent_total = round(
+      (ncol(mat) - ncol(filtered_mat)) / ncol(mat) * 100,
+      4
+    ),
+    removed_high_missing_features = removed_high_missing,
+    removed_zero_or_invalid_variance_features = removed_zero_or_invalid_var,
     max_missing_allowed_percent = max_missing * 100
   )
   
   print(summary)
   
-  list(matrix = filtered, summary = summary)
-}
-
-median_impute <- function(mat, layer_name) {
-  message("\nMedian imputation: ", layer_name)
-  
-  missing_before <- sum(is.na(mat))
-  
-  if (missing_before == 0) {
-    message("No missing values found in ", layer_name)
-    return(mat)
-  }
-  
-  for (j in seq_len(ncol(mat))) {
-    idx <- is.na(mat[, j])
-    
-    if (any(idx)) {
-      med <- median(mat[, j], na.rm = TRUE)
-      mat[idx, j] <- med
-    }
-  }
-  
-  missing_after <- sum(is.na(mat))
-  
-  message("Missing before: ", missing_before)
-  message("Missing after: ", missing_after)
-  
-  return(mat)
-}
-
-select_top_variable_features <- function(mat, layer_name, top_n) {
-  message("\nVariance filtering: ", layer_name)
-  
-  if (ncol(mat) <= top_n) {
-    message(layer_name, " has <= ", top_n, " features. Keeping all features.")
-    
-    summary <- tibble::tibble(
-      layer = layer_name,
-      features_before_variance_filter = ncol(mat),
-      features_after_variance_filter = ncol(mat),
-      selected_top_n = ncol(mat)
-    )
-    
-    return(list(matrix = mat, summary = summary))
-  }
-  
-  vars <- matrixStats::colVars(mat, na.rm = TRUE)
-  names(vars) <- colnames(mat)
-  
-  top_features <- names(sort(vars, decreasing = TRUE))[seq_len(top_n)]
-  
-  filtered <- mat[, top_features, drop = FALSE]
-  
-  summary <- tibble::tibble(
-    layer = layer_name,
-    features_before_variance_filter = ncol(mat),
-    features_after_variance_filter = ncol(filtered),
-    selected_top_n = top_n
+  list(
+    matrix = filtered_mat,
+    summary = summary
   )
-  
-  print(summary)
-  
-  list(matrix = filtered, summary = summary)
 }
 
 # -----------------------------
-# 3. Summary before preprocessing
+# 3. Summary before QC
 # -----------------------------
 
 preprocessing_summary_before <- dplyr::bind_rows(
@@ -139,203 +157,247 @@ preprocessing_summary_before <- dplyr::bind_rows(
   summarize_matrix(rppa, "RPPA")
 )
 
-message("\nSummary before preprocessing:")
+message("\nSummary before basic QC:")
 print(preprocessing_summary_before)
 
 readr::write_tsv(
   preprocessing_summary_before,
-  file.path(tables_dir, "preprocessing_summary_before.tsv")
+  file.path(tables_dir, "preprocessing_summary_before_basic_qc.tsv")
 )
 
 # -----------------------------
-# 4. Remove high-missingness and zero-variance features
+# 4. Basic technical QC only
 # -----------------------------
-# General QC only.
-# No subtype-based feature selection is done here.
+# This removes technically unusable features only.
+# No imputation, no scaling, no feature selection, no batch correction.
 
-mrna_qc <- filter_qc_features(mrna, "mRNA", max_missing = 0.20)
-methylation_qc <- filter_qc_features(methylation, "DNA methylation", max_missing = 0.20)
-rppa_qc <- filter_qc_features(rppa, "RPPA", max_missing = 0.20)
+mrna_qc <- basic_qc_filter(
+  mat = mrna,
+  layer_name = "mRNA",
+  max_missing = 0.20
+)
+
+methylation_qc <- basic_qc_filter(
+  mat = methylation,
+  layer_name = "DNA methylation",
+  max_missing = 0.20
+)
+
+rppa_qc <- basic_qc_filter(
+  mat = rppa,
+  layer_name = "RPPA",
+  max_missing = 0.20
+)
 
 mrna_qc_mat <- mrna_qc$matrix
 methylation_qc_mat <- methylation_qc$matrix
 rppa_qc_mat <- rppa_qc$matrix
 
-qc_filtering_summary <- dplyr::bind_rows(
+# Check sample order after feature filtering
+stopifnot(identical(labels$sample_id, rownames(mrna_qc_mat)))
+stopifnot(identical(labels$sample_id, rownames(methylation_qc_mat)))
+stopifnot(identical(labels$sample_id, rownames(rppa_qc_mat)))
+
+basic_qc_summary <- dplyr::bind_rows(
   mrna_qc$summary,
   methylation_qc$summary,
   rppa_qc$summary
 )
 
 readr::write_tsv(
-  qc_filtering_summary,
-  file.path(tables_dir, "qc_filtering_summary.tsv")
+  basic_qc_summary,
+  file.path(tables_dir, "basic_qc_filtering_summary.tsv")
 )
 
 # -----------------------------
-# 5. Median imputation
+# 5. Summary after basic QC
 # -----------------------------
-# This is acceptable here for EDA and baseline modelling.
-# In the final nested CV pipeline, imputation should be fitted inside training folds.
 
-mrna_imputed <- median_impute(mrna_qc_mat, "mRNA")
-methylation_imputed <- median_impute(methylation_qc_mat, "DNA methylation")
-rppa_imputed <- median_impute(rppa_qc_mat, "RPPA")
-
-# -----------------------------
-# 6. Variance-based feature filtering
-# -----------------------------
-# Rationale:
-# mRNA and methylation are very high-dimensional.
-# We keep the most variable features for practical baseline modelling.
-#
-# Conservative but feasible:
-# mRNA: top 5000
-# methylation: top 10000
-# RPPA: all features
-
-mrna_var <- select_top_variable_features(
-  mrna_imputed,
-  "mRNA",
-  top_n = 5000
+preprocessing_summary_after_basic_qc <- dplyr::bind_rows(
+  summarize_matrix(mrna_qc_mat, "mRNA"),
+  summarize_matrix(methylation_qc_mat, "DNA methylation"),
+  summarize_matrix(rppa_qc_mat, "RPPA")
 )
 
-methylation_var <- select_top_variable_features(
-  methylation_imputed,
-  "DNA methylation",
-  top_n = 10000
-)
-
-rppa_var <- select_top_variable_features(
-  rppa_imputed,
-  "RPPA",
-  top_n = ncol(rppa_imputed)
-)
-
-mrna_processed <- mrna_var$matrix
-methylation_processed <- methylation_var$matrix
-rppa_processed <- rppa_var$matrix
-
-variance_filtering_summary <- dplyr::bind_rows(
-  mrna_var$summary,
-  methylation_var$summary,
-  rppa_var$summary
-)
+message("\nSummary after basic QC:")
+print(preprocessing_summary_after_basic_qc)
 
 readr::write_tsv(
-  variance_filtering_summary,
-  file.path(tables_dir, "variance_filtering_summary.tsv")
+  preprocessing_summary_after_basic_qc,
+  file.path(tables_dir, "preprocessing_summary_after_basic_qc.tsv")
 )
 
 # -----------------------------
-# 7. Summary after preprocessing
-# -----------------------------
-
-preprocessing_summary_after <- dplyr::bind_rows(
-  summarize_matrix(mrna_processed, "mRNA"),
-  summarize_matrix(methylation_processed, "DNA methylation"),
-  summarize_matrix(rppa_processed, "RPPA")
-)
-
-message("\nSummary after preprocessing:")
-print(preprocessing_summary_after)
-
-readr::write_tsv(
-  preprocessing_summary_after,
-  file.path(tables_dir, "preprocessing_summary_after.tsv")
-)
-
-# -----------------------------
-# 8. Create class-balance plot
+# 6. Class balance
 # -----------------------------
 
 class_balance <- labels %>%
   dplyr::count(subtype, name = "n") %>%
   dplyr::mutate(percent = round(n / sum(n) * 100, 2))
 
-p_class <- ggplot2::ggplot(class_balance, ggplot2::aes(x = subtype, y = n)) +
-  ggplot2::geom_col() +
-  ggplot2::labs(
-    title = "Class balance after sample matching",
-    x = "NSCLC subtype",
-    y = "Number of samples"
-  ) +
-  ggplot2::theme_minimal(base_size = 12)
+message("\nClass balance:")
+print(class_balance)
 
-ggplot2::ggsave(
-  file.path(figures_dir, "class_balance.png"),
-  p_class,
-  width = 5,
-  height = 4,
-  dpi = 300
+readr::write_tsv(
+  class_balance,
+  file.path(tables_dir, "class_balance_basic_qc.tsv")
 )
 
 # -----------------------------
-# 9. Create feature-count plot
+# 7. Candidate batch/source columns for later EDA
+# -----------------------------
+# This only identifies variables for EDA coloring.
+# It does NOT apply batch correction.
+
+diagnostic_metadata_cols <- grep(
+  "batch|plate|center|lab|platform|source|site|tss|ship|date|study|file|slide",
+  colnames(metadata),
+  ignore.case = TRUE,
+  value = TRUE
+)
+
+# Exclude biological/label-like columns from correction candidates.
+# They may still appear in metadata, but they should not be treated
+# as technical batch variables for correction.
+exclude_as_batch <- c(
+  "sample_id",
+  "subtype",
+  "CANCER_TYPE",
+  "CANCER_TYPE_DETAILED",
+  "ONCOTREE_CODE",
+  "SAMPLE_TYPE",
+  "SAMPLE_CLASS",
+  "TUMOR_TYPE",
+  "clinical_source"
+)
+
+candidate_batch_cols <- setdiff(
+  diagnostic_metadata_cols,
+  exclude_as_batch
+)
+
+candidate_batch_cols <- candidate_batch_cols[
+  candidate_batch_cols %in% colnames(metadata)
+]
+
+# Keep only columns with more than one non-missing value.
+candidate_batch_cols <- candidate_batch_cols[
+  vapply(
+    candidate_batch_cols,
+    function(col) length(unique(na.omit(metadata[[col]]))) > 1,
+    logical(1)
+  )
+]
+
+message("\nMetadata columns available:")
+print(colnames(metadata))
+
+message("\nDiagnostic metadata columns:")
+print(diagnostic_metadata_cols)
+
+message("\nCandidate batch/source columns for later EDA:")
+print(candidate_batch_cols)
+
+readr::write_tsv(
+  metadata,
+  file.path(tables_dir, "sample_metadata_matched_for_batch_check.tsv")
+)
+
+readr::write_tsv(
+  tibble::tibble(
+    diagnostic_metadata_column = diagnostic_metadata_cols
+  ),
+  file.path(tables_dir, "diagnostic_metadata_columns.tsv")
+)
+
+readr::write_tsv(
+  tibble::tibble(
+    candidate_batch_column = candidate_batch_cols
+  ),
+  file.path(tables_dir, "candidate_batch_columns.tsv")
+)
+
+if (length(candidate_batch_cols) > 0) {
+  batch_counts <- lapply(candidate_batch_cols, function(col) {
+    metadata %>%
+      dplyr::mutate(batch_value = as.character(.data[[col]])) %>%
+      dplyr::count(batch_value, subtype, name = "n") %>%
+      dplyr::mutate(batch_variable = col) %>%
+      dplyr::select(batch_variable, batch_value, subtype, n)
+  }) %>%
+    dplyr::bind_rows()
+  
+  readr::write_tsv(
+    batch_counts,
+    file.path(tables_dir, "batch_candidate_counts_by_subtype.tsv")
+  )
+  
+  message("\nBatch/source candidate counts by subtype:")
+  print(batch_counts)
+}
+
+# -----------------------------
+# 8. Save one official QC modelling object
 # -----------------------------
 
-feature_counts <- tibble::tibble(
-  layer = rep(c("mRNA", "DNA methylation", "RPPA"), each = 3),
-  stage = rep(c("Original", "After QC", "After variance filtering"), times = 3),
+qc_model_input <- list(
+  labels = labels,
+  metadata = metadata,
+  mrna = mrna_qc_mat,
+  methylation = methylation_qc_mat,
+  rppa = rppa_qc_mat,
+  diagnostic_metadata_cols = diagnostic_metadata_cols,
+  candidate_batch_cols = candidate_batch_cols,
+  preprocessing_summary_before = preprocessing_summary_before,
+  basic_qc_summary = basic_qc_summary,
+  preprocessing_summary_after_basic_qc = preprocessing_summary_after_basic_qc,
+  class_balance = class_balance,
+  note = paste(
+    "This object contains matched, basic-QC-filtered data only.",
+    "The omics layers are stored separately as mrna, methylation, and rppa.",
+    "No global imputation, scaling, top-variable filtering, supervised feature selection, or batch correction was applied.",
+    "For final modelling, imputation, scaling, feature selection, and any batch correction used for model input must be fitted inside cross-validation training folds."
+  )
+)
+
+qc_rds_path <- file.path(
+  processed_dir,
+  "02_qc_model_input_unimputed.rds"
+)
+
+saveRDS(
+  qc_model_input,
+  qc_rds_path,
+  compress = FALSE
+)
+
+message("\nSaved leakage-aware QC modelling object to:")
+message(qc_rds_path)
+
+# -----------------------------
+# 9. Save dimension table
+# -----------------------------
+
+qc_dimension_summary <- tibble::tibble(
+  layer = c("mRNA", "DNA methylation", "RPPA"),
+  samples = c(
+    nrow(mrna_qc_mat),
+    nrow(methylation_qc_mat),
+    nrow(rppa_qc_mat)
+  ),
   features = c(
-    ncol(mrna), ncol(mrna_qc_mat), ncol(mrna_processed),
-    ncol(methylation), ncol(methylation_qc_mat), ncol(methylation_processed),
-    ncol(rppa), ncol(rppa_qc_mat), ncol(rppa_processed)
+    ncol(mrna_qc_mat),
+    ncol(methylation_qc_mat),
+    ncol(rppa_qc_mat)
   )
 )
 
 readr::write_tsv(
-  feature_counts,
-  file.path(tables_dir, "feature_counts_by_stage.tsv")
+  qc_dimension_summary,
+  file.path(tables_dir, "qc_dimension_summary.tsv")
 )
 
-p_features <- ggplot2::ggplot(
-  feature_counts,
-  ggplot2::aes(x = stage, y = features, fill = layer)
-) +
-  ggplot2::geom_col(position = "dodge") +
-  ggplot2::facet_wrap(~ layer, scales = "free_y") +
-  ggplot2::labs(
-    title = "Feature counts across preprocessing steps",
-    x = "Preprocessing stage",
-    y = "Number of features"
-  ) +
-  ggplot2::theme_minimal(base_size = 12) +
-  ggplot2::theme(
-    axis.text.x = ggplot2::element_text(angle = 30, hjust = 1)
-  )
-
-ggplot2::ggsave(
-  file.path(figures_dir, "feature_counts_by_stage.png"),
-  p_features,
-  width = 9,
-  height = 5,
-  dpi = 300
-)
-
-# -----------------------------
-# 10. Save processed data
-# -----------------------------
-
-processed_data <- list(
-  labels = labels,
-  mrna = mrna_processed,
-  methylation = methylation_processed,
-  rppa = rppa_processed,
-  preprocessing_summary_before = preprocessing_summary_before,
-  qc_filtering_summary = qc_filtering_summary,
-  variance_filtering_summary = variance_filtering_summary,
-  preprocessing_summary_after = preprocessing_summary_after,
-  feature_counts = feature_counts
-)
-
-saveRDS(
-  processed_data,
-  file.path(processed_dir, "02_preprocessed_data.rds"),
-  compress = FALSE
-)
-
-message("\nSaved preprocessed data to:")
-message(file.path(processed_dir, "02_preprocessed_data.rds"))
+message("\nQC dimension summary:")
+print(qc_dimension_summary)
 
 message("\n02_preprocessing.R completed successfully.")

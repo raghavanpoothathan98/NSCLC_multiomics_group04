@@ -1,7 +1,0 @@
-layer	model	total_errors
-DNA methylation	Random forest	7
-mRNA	Random forest	24
-DNA methylation	Elastic net	25
-mRNA	Elastic net	27
-RPPA	Elastic net	38
-RPPA	Random forest	57

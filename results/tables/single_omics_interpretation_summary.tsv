@@ -1,0 +1,6 @@
+section	conclusion
+Single-omics modelling	Elastic Net and Random Forest were trained separately on mRNA, DNA methylation and RPPA to establish single-omics baseline performance.
+Leakage control	Median imputation, scaling and top-variable filtering were fitted inside each cross-validation training fold only, then applied to the held-out fold.
+Best baseline model	The strongest single-omics baseline was DNA methylation + Random Forest with ROC-AUC = 0.998.
+Why report macro-F1	LUSC is used as the positive class for probability-based ROC calculations, but F1_LUAD, F1_LUSC and macro-F1 are reported to evaluate both subtypes fairly.
+Next analysis step	The next step is multi-omics integration to test whether combining omics layers improves over the best single-omics baseline.

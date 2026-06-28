@@ -1,0 +1,4 @@
+layer	elastic_net_top_n	random_forest_top_n
+mRNA	5000	2000
+DNA methylation	10000	3000
+RPPA	189	189

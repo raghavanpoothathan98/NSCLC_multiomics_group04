@@ -1,0 +1,9 @@
+subtype	layer	file
+LUAD	clinical_sample	C:/Users/GuestUser/NSCLC_multiomics_group04/data/raw/LUAD/luad_tcga_pan_can_atlas_2018/data_clinical_sample.txt
+LUAD	mRNA	C:/Users/GuestUser/NSCLC_multiomics_group04/data/raw/LUAD/luad_tcga_pan_can_atlas_2018/data_mrna_seq_v2_rsem.txt
+LUAD	DNA_methylation	C:/Users/GuestUser/NSCLC_multiomics_group04/data/raw/LUAD/luad_tcga_pan_can_atlas_2018/data_methylation_hm450.txt
+LUAD	RPPA	C:/Users/GuestUser/NSCLC_multiomics_group04/data/raw/LUAD/luad_tcga_pan_can_atlas_2018/data_rppa.txt
+LUSC	clinical_sample	C:/Users/GuestUser/NSCLC_multiomics_group04/data/raw/LUSC/lusc_tcga_pan_can_atlas_2018/data_clinical_sample.txt
+LUSC	mRNA	C:/Users/GuestUser/NSCLC_multiomics_group04/data/raw/LUSC/lusc_tcga_pan_can_atlas_2018/data_mrna_seq_v2_rsem.txt
+LUSC	DNA_methylation	C:/Users/GuestUser/NSCLC_multiomics_group04/data/raw/LUSC/lusc_tcga_pan_can_atlas_2018/data_methylation_hm450.txt
+LUSC	RPPA	C:/Users/GuestUser/NSCLC_multiomics_group04/data/raw/LUSC/lusc_tcga_pan_can_atlas_2018/data_rppa.txt

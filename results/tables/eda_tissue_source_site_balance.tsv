@@ -1,0 +1,42 @@
+TISSUE_SOURCE_SITE	LUAD	LUSC	total	only_one_subtype
+Asterand	31	41	72	FALSE
+Prince Charles Hospital	28	22	50	FALSE
+Christiana Healthcare	33	12	45	FALSE
+University of Pittsburgh	29	14	43	FALSE
+International Genomics Consortium	21	11	32	FALSE
+Johns Hopkins	20	11	31	FALSE
+ABS - IUPUI	16	7	23	FALSE
+Ontario Institute for Cancer Research	0	20	20	TRUE
+Thoraxklinik at University Hospital Heidelberg	9	10	19	FALSE
+Washington University - Emory	9	9	18	FALSE
+Washington University - Mayo Clinic	18	0	18	TRUE
+Mayo Clinic - Rochester	0	17	17	TRUE
+MSKCC	0	15	15	TRUE
+Washington University - NYU	13	2	15	FALSE
+Washington University - CHUV	0	14	14	TRUE
+Ontario Institute for Cancer Research (OICR)	12	0	12	TRUE
+Washington University - Cleveland Clinic	7	4	11	FALSE
+Indivumed	10	0	10	TRUE
+Washington University - Alabama	2	8	10	FALSE
+Washington University - Rush University	7	3	10	FALSE
+Candler	7	2	9	FALSE
+Roswell Park	5	4	9	FALSE
+Fox Chase	7	0	7	TRUE
+University of Miami	4	3	7	FALSE
+Washington University - St. Louis	5	1	6	FALSE
+Washington University - CALGB	1	4	5	FALSE
+ABS - Lahey Clinic	4	0	4	TRUE
+Cureline	1	3	4	FALSE
+Fox Chase Cancer Center	0	4	4	TRUE
+Gundersen Lutheran Health System	2	2	4	FALSE
+ILSBio	2	2	4	FALSE
+Ontario Institute for Cancer Research (OICR)/Ottawa	3	1	4	FALSE
+St Joseph's Medical Center (MD)	3	0	3	TRUE
+BLN - Baylor	2	0	2	TRUE
+Princess Margaret Hospital (Canada)	0	2	2	TRUE
+St. Joseph's Medical Center (MD)	0	2	2	TRUE
+UNC	2	0	2	TRUE
+Albert Einstein Medical Center	1	0	1	TRUE
+CHI-Penrose Colorado	1	0	1	TRUE
+Mary Bird Perkins Cancer Center - Our Lady of the Lake	1	0	1	TRUE
+University of Minnesota	0	1	1	TRUE

@@ -1,0 +1,4 @@
+layer	features_before	features_after_basic_qc	removed_features_total	removed_percent_total	removed_high_missing_features	removed_zero_or_invalid_variance_features	max_missing_allowed_percent
+mRNA	20531	20248	283	1.3784	0	283	20
+DNA methylation	396065	395655	410	0.1035	410	0	20
+RPPA	198	189	9	4.5455	9	2	20

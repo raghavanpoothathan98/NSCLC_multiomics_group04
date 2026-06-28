@@ -1,4 +1,0 @@
-layer	features_before_variance_filter	features_after_variance_filter	selected_top_n
-mRNA	20229	5000	5000
-DNA methylation	395655	10000	10000
-RPPA	189	189	189

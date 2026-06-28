@@ -1,0 +1,7 @@
+section	conclusion
+Class balance	The matched dataset contains 316 LUAD and 251 LUSC samples.
+Feature counts	After basic QC, the dataset contains 20,248 mRNA features, 395,655 DNA methylation features and 189 RPPA features.
+Missingness	After basic QC, mRNA and RPPA have no missing values, while DNA methylation has low remaining missingness. Remaining methylation missing values are not globally imputed and will be handled inside cross-validation folds.
+PCA by subtype	PCA is used to inspect whether major variation separates LUAD and LUSC within each omics layer.
+PCA by source/site	PCA colored by source/site variables is used to inspect whether sample clustering may also reflect tissue source or collection site.
+Batch/source correction decision	Source/site variables are inspected but not corrected because they are strongly confounded with subtype. Correcting them could remove biological LUAD/LUSC signal.

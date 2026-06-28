@@ -15,7 +15,8 @@ packages <- c(
   "tibble",
   "ggplot2",
   "readr",
-  "matrixStats"
+  "matrixStats",
+  "stringr"
 )
 
 installed <- packages %in% rownames(installed.packages())
@@ -33,6 +34,7 @@ suppressPackageStartupMessages({
   library(ggplot2)
   library(readr)
   library(matrixStats)
+  library(stringr)
 })
 
 # -----------------------------
@@ -44,6 +46,9 @@ project_dir <- here::here()
 data_dir <- here::here("data")
 raw_dir <- here::here("data", "raw")
 processed_dir <- here::here("data", "processed")
+
+luad_raw_dir <- file.path(raw_dir, "LUAD", "luad_tcga_pan_can_atlas_2018")
+lusc_raw_dir <- file.path(raw_dir, "LUSC", "lusc_tcga_pan_can_atlas_2018")
 
 results_dir <- here::here("results")
 figures_dir <- here::here("results", "figures")
@@ -63,72 +68,71 @@ dir.create(figures_dir, recursive = TRUE, showWarnings = FALSE)
 dir.create(tables_dir, recursive = TRUE, showWarnings = FALSE)
 
 # -----------------------------
-# 4. Define matched data paths
+# 4. Define raw input folders
 # -----------------------------
-# Matched files are stored in data/processed/
+
+raw_paths <- list(
+  luad_dir = luad_raw_dir,
+  lusc_dir = lusc_raw_dir
+)
+
+# -----------------------------
+# 5. Define generated output paths
+# -----------------------------
+# These files are created by 01_load_data.R.
+# They are NOT required before running the workflow.
 
 paths <- list(
+  loaded_matched_rds = file.path(processed_dir, "01_loaded_matched_data.rds"),
   labels = file.path(processed_dir, "sample_labels.tsv"),
   mrna = file.path(processed_dir, "matched_mrna.tsv"),
   methylation = file.path(processed_dir, "matched_methylation.tsv"),
   rppa = file.path(processed_dir, "matched_rppa.tsv"),
-  integrated = file.path(processed_dir, "integrated_feature_matrix.tsv"),
-  missing_summary = file.path(processed_dir, "missing_value_summary.xlsx"),
-  cv_results = file.path(processed_dir, "cv_results.tsv")
+  qc_model_input = file.path(processed_dir, "02_qc_model_input_unimputed.rds"),
+  eda_results = file.path(processed_dir, "03_eda_results.rds")
 )
 
 # -----------------------------
-# 5. Print project information
+# 6. Print project information
 # -----------------------------
 
 message("Project root:")
 message(project_dir)
 
+message("\nRaw data folder:")
+message(raw_dir)
+
+message("\nLUAD raw folder:")
+message(luad_raw_dir)
+
+message("\nLUSC raw folder:")
+message(lusc_raw_dir)
+
 message("\nProcessed data folder:")
 message(processed_dir)
 
-message("\nFiles found in processed folder:")
-print(list.files(processed_dir, all.files = TRUE))
+message("\nResults folder:")
+message(results_dir)
 
 # -----------------------------
-# 6. Check required files
+# 7. Check raw folders only
 # -----------------------------
 
-required_paths <- paths[c(
-  "labels",
-  "mrna",
-  "methylation",
-  "rppa"
-)]
+raw_folder_check <- c(
+  LUAD_raw_folder = dir.exists(luad_raw_dir),
+  LUSC_raw_folder = dir.exists(lusc_raw_dir)
+)
 
-file_check <- sapply(required_paths, file.exists)
+message("\nRaw folder check:")
+print(raw_folder_check)
 
-message("\nRequired file check:")
-print(file_check)
-
-if (!all(file_check)) {
-  missing_files <- names(file_check)[!file_check]
-  
+if (!all(raw_folder_check)) {
   stop(
-    "Missing required file(s): ",
-    paste(missing_files, collapse = ", "),
-    "\nCheck filenames and location inside data/processed/."
+    "One or more raw data folders are missing. Expected:\n",
+    luad_raw_dir, "\n",
+    lusc_raw_dir, "\n",
+    "Check data/raw/ folder names."
   )
 }
-
-# -----------------------------
-# 7. Optional file check
-# -----------------------------
-
-optional_paths <- paths[c(
-  "integrated",
-  "missing_summary",
-  "cv_results"
-)]
-
-optional_check <- sapply(optional_paths, file.exists)
-
-message("\nOptional file check:")
-print(optional_check)
 
 message("\nSetup completed successfully.")

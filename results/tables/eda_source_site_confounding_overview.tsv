@@ -1,0 +1,3 @@
+batch_variable	n_groups	groups_with_only_one_subtype	percent_only_one_subtype	median_dominant_fraction	min_dominant_fraction
+TCGA_TSS	63	63	100	1	1
+TISSUE_SOURCE_SITE	41	19	46.34	0.833	0.5

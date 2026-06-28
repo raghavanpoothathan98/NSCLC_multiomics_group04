@@ -1,0 +1,4 @@
+layer	samples	features	total_values	missing_values	missing_percent	features_with_missing	max_feature_missing_percent	max_sample_missing_percent	zero_or_invalid_variance_features
+mRNA	567	20248	11480616	0	0	0	0	0	0
+DNA methylation	567	395655	224336385	140295	0.0625	19410	19.9295	1.496	0
+RPPA	567	189	107163	0	0	0	0	0	0

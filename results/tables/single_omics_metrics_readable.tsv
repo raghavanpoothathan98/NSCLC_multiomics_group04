@@ -1,7 +1,0 @@
-layer	model	ROC_AUC	balanced_accuracy	F1_LUSC
-DNA methylation	Random forest	0.998 ± 0.003	0.987 ± 0.015	0.986 ± 0.016
-mRNA	Elastic net	0.991 ± 0.007	0.949 ± 0.025	0.944 ± 0.028
-mRNA	Random forest	0.99 ± 0.009	0.955 ± 0.023	0.951 ± 0.026
-DNA methylation	Elastic net	0.986 ± 0.016	0.952 ± 0.024	0.949 ± 0.028
-RPPA	Elastic net	0.975 ± 0.016	0.93 ± 0.026	0.923 ± 0.03
-RPPA	Random forest	0.966 ± 0.025	0.894 ± 0.053	0.88 ± 0.062

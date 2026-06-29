@@ -1,0 +1,7 @@
+fold	layer	component	keepX	source
+NA	mRNA	1	100	median_keepX_from_outer_folds_or_fixed_fallback
+NA	mRNA	2	10	median_keepX_from_outer_folds_or_fixed_fallback
+NA	DNA methylation	1	100	median_keepX_from_outer_folds_or_fixed_fallback
+NA	DNA methylation	2	25	median_keepX_from_outer_folds_or_fixed_fallback
+NA	RPPA	1	50	median_keepX_from_outer_folds_or_fixed_fallback
+NA	RPPA	2	50	median_keepX_from_outer_folds_or_fixed_fallback

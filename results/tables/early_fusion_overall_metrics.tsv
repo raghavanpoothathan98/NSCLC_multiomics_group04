@@ -1,0 +1,2 @@
+model_label	model	integration	n_samples	ROC_AUC	accuracy	balanced_accuracy	F1_LUAD	F1_LUSC	macro_F1	sensitivity_LUSC	specificity_LUAD
+Early fusion + Elastic Net	Elastic Net	Early fusion	567	0.9894724897876847	0.9594356261022927	0.9562320338897574	0.9643410852713178	0.952965235173824	0.958653160222571	0.9282868525896414	0.9841772151898734

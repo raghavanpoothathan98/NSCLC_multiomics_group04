@@ -1,0 +1,31 @@
+fold	layer	component	keepX	tuning_status
+1	mRNA	1	10	inner_cv_tuned_keepX
+1	mRNA	2	50	inner_cv_tuned_keepX
+1	DNA methylation	1	100	inner_cv_tuned_keepX
+1	DNA methylation	2	10	inner_cv_tuned_keepX
+1	RPPA	1	50	inner_cv_tuned_keepX
+1	RPPA	2	50	inner_cv_tuned_keepX
+2	mRNA	1	100	inner_cv_tuned_keepX
+2	mRNA	2	25	inner_cv_tuned_keepX
+2	DNA methylation	1	100	inner_cv_tuned_keepX
+2	DNA methylation	2	25	inner_cv_tuned_keepX
+2	RPPA	1	25	inner_cv_tuned_keepX
+2	RPPA	2	50	inner_cv_tuned_keepX
+3	mRNA	1	100	inner_cv_tuned_keepX
+3	mRNA	2	10	inner_cv_tuned_keepX
+3	DNA methylation	1	50	inner_cv_tuned_keepX
+3	DNA methylation	2	50	inner_cv_tuned_keepX
+3	RPPA	1	50	inner_cv_tuned_keepX
+3	RPPA	2	50	inner_cv_tuned_keepX
+4	mRNA	1	100	inner_cv_tuned_keepX
+4	mRNA	2	10	inner_cv_tuned_keepX
+4	DNA methylation	1	50	inner_cv_tuned_keepX
+4	DNA methylation	2	25	inner_cv_tuned_keepX
+4	RPPA	1	50	inner_cv_tuned_keepX
+4	RPPA	2	10	inner_cv_tuned_keepX
+5	mRNA	1	100	inner_cv_tuned_keepX
+5	mRNA	2	10	inner_cv_tuned_keepX
+5	DNA methylation	1	100	inner_cv_tuned_keepX
+5	DNA methylation	2	10	inner_cv_tuned_keepX
+5	RPPA	1	50	inner_cv_tuned_keepX
+5	RPPA	2	50	inner_cv_tuned_keepX

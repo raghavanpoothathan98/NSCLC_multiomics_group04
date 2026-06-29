@@ -1,0 +1,340 @@
+layer	component	feature	loading	abs_loading	selected	fold	model_label	integration	source
+mRNA	1	PVRL1	0.2449063604954832	0.2449063604954832	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+mRNA	1	TRIM29	0.23259136941828934	0.23259136941828934	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+mRNA	1	PERP	0.21016173675366612	0.21016173675366612	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+mRNA	1	TP63	0.2056776438101773	0.2056776438101773	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+mRNA	1	PKP1	0.200445435154895	0.200445435154895	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+mRNA	1	DSC3	0.19817735444544038	0.19817735444544038	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+mRNA	1	KRT5	0.19358946263519505	0.19358946263519505	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+mRNA	1	SLC6A8	0.18974232384408954	0.18974232384408954	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+mRNA	1	PSMD2	0.17982225462213372	0.17982225462213372	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+mRNA	1	ATP1B3	0.1762478075727404	0.1762478075727404	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+mRNA	1	JUP	0.1692669429377416	0.1692669429377416	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+mRNA	1	SLC2A1	0.1622967056742615	0.1622967056742615	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+mRNA	1	DSG3	0.15538612828125978	0.15538612828125978	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+mRNA	1	EIF4G1	0.1535355924530825	0.1535355924530825	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+mRNA	1	MUC1	-0.15046899253643808	0.15046899253643808	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+mRNA	1	KRT6A	0.13876482036756488	0.13876482036756488	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+mRNA	1	GPC1	0.13120831818025097	0.13120831818025097	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+mRNA	1	TUBA1C	0.12663868051445068	0.12663868051445068	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+mRNA	1	CALML3	0.12614697698080354	0.12614697698080354	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+mRNA	1	COL7A1	0.12611347701797107	0.12611347701797107	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+mRNA	1	DST	0.12415924967737536	0.12415924967737536	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+mRNA	1	ABCC5	0.12358774670567362	0.12358774670567362	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+mRNA	1	CD9	0.1235332517737342	0.1235332517737342	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+mRNA	1	NTRK2	0.12331847035355849	0.12331847035355849	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+mRNA	1	CD63	-0.1221692473901977	0.1221692473901977	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+mRNA	1	DSP	0.12118796470500456	0.12118796470500456	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+mRNA	1	ITGA6	0.11415234221364609	0.11415234221364609	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+mRNA	1	ATP11A	-0.11360817111336159	0.11360817111336159	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+mRNA	1	SLC34A2	-0.11233614291712085	0.11233614291712085	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+mRNA	1	MVP	-0.11044233577643646	0.11044233577643646	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+mRNA	1	FSCN1	0.10897871575458216	0.10897871575458216	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+mRNA	1	SFN	0.10491001828668974	0.10491001828668974	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+mRNA	1	CLCA2	0.10422164291422195	0.10422164291422195	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+mRNA	1	SGK1	0.09855463509011413	0.09855463509011413	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+mRNA	1	DDR1	0.09750997672144962	0.09750997672144962	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+mRNA	1	CLSTN1	0.09727574267750631	0.09727574267750631	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+mRNA	1	KRT17	0.092405809119645	0.092405809119645	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+mRNA	1	GAPDH	0.08850555513862277	0.08850555513862277	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+mRNA	1	C1orf116	-0.08596532531751877	0.08596532531751877	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+mRNA	1	TPI1	0.08458841719889966	0.08458841719889966	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+mRNA	1	GPI	0.0844831595274117	0.0844831595274117	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+mRNA	1	ABCC1	0.08287306137973346	0.08287306137973346	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+mRNA	1	QSOX1.1	-0.08134775939191503	0.08134775939191503	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+mRNA	1	NAPSA	-0.08126458865766988	0.08126458865766988	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+mRNA	1	TRAM1	-0.08080946323974135	0.08080946323974135	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+mRNA	1	EIF4A2	0.07824083776450391	0.07824083776450391	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+mRNA	1	RPL35A	0.07591560421828977	0.07591560421828977	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+mRNA	1	TFRC	0.07510354918178759	0.07510354918178759	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+mRNA	1	GPR116	-0.0707977750124269	0.0707977750124269	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+mRNA	1	GJA1	0.06934110282306337	0.06934110282306337	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+mRNA	1	CD46	-0.06881497973924965	0.06881497973924965	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+mRNA	1	CEACAM6	-0.06827139489875172	0.06827139489875172	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+mRNA	1	CAPN2	-0.06413949034824959	0.06413949034824959	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+mRNA	1	MALL	-0.061535411287892264	0.061535411287892264	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+mRNA	1	NDRG1	0.061517961240253	0.061517961240253	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+mRNA	1	KRT15	0.06091764229961856	0.06091764229961856	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+mRNA	1	FXYD3	0.058718259394645235	0.058718259394645235	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+mRNA	1	AP2M1	0.05781200994807764	0.05781200994807764	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+mRNA	1	CSTA	0.05707751954301401	0.05707751954301401	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+mRNA	1	ITGB4	0.055882608256416354	0.055882608256416354	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+mRNA	1	GPRC5A	-0.055645517099403706	0.055645517099403706	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+mRNA	1	HSPB1	0.05468976281951614	0.05468976281951614	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+mRNA	1	KRT19	0.05360958491928726	0.05360958491928726	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+mRNA	1	CD44	0.05260233434080189	0.05260233434080189	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+mRNA	1	LPCAT1	-0.04989412734226449	0.04989412734226449	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+mRNA	1	CTSD	-0.04907551132858271	0.04907551132858271	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+mRNA	1	KRT7	-0.04888386037897889	0.04888386037897889	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+mRNA	1	CLDN1	0.04720774846894914	0.04720774846894914	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+mRNA	1	EPCAM	-0.041985667109103245	0.041985667109103245	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+mRNA	1	ATP5B	0.0401647241160658	0.0401647241160658	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+mRNA	1	TMBIM6	-0.038008426080072585	0.038008426080072585	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+mRNA	1	TUBB	0.036060916533884546	0.036060916533884546	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+mRNA	1	NCL	0.03533896706064778	0.03533896706064778	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+mRNA	1	ICAM1	-0.03482261526740253	0.03482261526740253	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+mRNA	1	RNASE1	-0.0322349014776808	0.0322349014776808	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+mRNA	1	PTPRF	0.03218719499597642	0.03218719499597642	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+mRNA	1	CD55	-0.031791434719259444	0.031791434719259444	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+mRNA	1	NOTCH3	0.03170123483855527	0.03170123483855527	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+mRNA	1	SFTPB	-0.030720377651172852	0.030720377651172852	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+mRNA	1	C8orf4	-0.029326944103847546	0.029326944103847546	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+mRNA	1	CD74	-0.026441578382764563	0.026441578382764563	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+mRNA	1	XBP1	-0.025671068751110762	0.025671068751110762	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+mRNA	1	TXNIP	-0.021185058280822212	0.021185058280822212	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+mRNA	1	COL17A1	0.018880954886152213	0.018880954886152213	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+mRNA	1	LGALS3BP	-0.015948019986179646	0.015948019986179646	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+mRNA	1	APLP2	-0.014084267527030667	0.014084267527030667	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+mRNA	1	SLC7A5	0.013322890154183184	0.013322890154183184	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+mRNA	1	RPS27A	0.013085683499526142	0.013085683499526142	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+mRNA	1	ERRFI1	-0.012522136528972867	0.012522136528972867	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+mRNA	1	PKM2	0.011303310140786577	0.011303310140786577	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+mRNA	1	A2M	-0.01123809777271384	0.01123809777271384	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+mRNA	1	HLA-DPA1	-0.011033516398038106	0.011033516398038106	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+mRNA	1	F11R	0.010061858796548027	0.010061858796548027	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+mRNA	1	KRT6C	0.0076307463395835756	0.0076307463395835756	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+mRNA	1	HOPX	-0.006659069081156633	0.006659069081156633	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+mRNA	1	HLA-DPB1	-0.005548009091689724	0.005548009091689724	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+mRNA	1	ABCA3	-0.0053507933307374396	0.0053507933307374396	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+mRNA	1	SDC4	-0.00445536871613139	0.00445536871613139	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+mRNA	1	KRT6B	0.0023509928855216544	0.0023509928855216544	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+mRNA	1	WFDC2	-4.092995497914678e-4	4.092995497914678e-4	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+mRNA	2	LAPTM5	-0.47569510925290726	0.47569510925290726	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+mRNA	2	CD74	-0.4491011440714267	0.4491011440714267	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+mRNA	2	EPCAM	0.4456238181274284	0.4456238181274284	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+mRNA	2	HLA-DPB1	-0.4022612250589768	0.4022612250589768	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+mRNA	2	HLA-DRA	-0.31468088009098255	0.31468088009098255	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+mRNA	2	HLA-E	-0.24895693555229864	0.24895693555229864	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+mRNA	2	HLA-DPA1	-0.16479920397332198	0.16479920397332198	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+mRNA	2	B2M	-0.12171378876430358	0.12171378876430358	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+mRNA	2	HLA-DRB1	-0.09000495080155431	0.09000495080155431	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+mRNA	2	HMGB3	0.023454588663313937	0.023454588663313937	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+DNA methylation	1	ZHX2	-0.1953263698477033	0.1953263698477033	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+DNA methylation	1	feature_58817	-0.18937123452793256	0.18937123452793256	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+DNA methylation	1	RTP1.8	-0.18521446287992405	0.18521446287992405	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+DNA methylation	1	PRKAR1B.114	-0.17505374226302822	0.17505374226302822	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+DNA methylation	1	TBCD.110	-0.17440196443188144	0.17440196443188144	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+DNA methylation	1	ST18.16	-0.1710693803867935	0.1710693803867935	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+DNA methylation	1	TP73.68	-0.16781938556994544	0.16781938556994544	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+DNA methylation	1	feature_187008	-0.16712220560474203	0.16712220560474203	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+DNA methylation	1	RNMTL1.7	-0.1660709210484287	0.1660709210484287	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+DNA methylation	1	MIR205HG.2	-0.16601484012484555	0.16601484012484555	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+DNA methylation	1	TP73.88	-0.16479140681163323	0.16479140681163323	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+DNA methylation	1	ZNF750;TBCD.17	-0.15938827736061084	0.15938827736061084	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+DNA methylation	1	SPSB1.35	-0.15871636890389737	0.15871636890389737	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+DNA methylation	1	MYLK.1	-0.15729673735754626	0.15729673735754626	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+DNA methylation	1	LIMA1.17	-0.15143258181565022	0.15143258181565022	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+DNA methylation	1	MIR128-1;R3HDM1	-0.14773790937105155	0.14773790937105155	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+DNA methylation	1	feature_282548	0.14635008817933223	0.14635008817933223	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+DNA methylation	1	ITPRIP.13	-0.13993867982890243	0.13993867982890243	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+DNA methylation	1	C3orf34	-0.13939379940190783	0.13939379940190783	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+DNA methylation	1	feature_362612	-0.13888654608281925	0.13888654608281925	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+DNA methylation	1	CALML3.8	-0.1370106124842615	0.1370106124842615	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+DNA methylation	1	KIF26B.13	-0.13441973655095954	0.13441973655095954	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+DNA methylation	1	feature_89067	-0.13396536020338	0.13396536020338	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+DNA methylation	1	TPM3;NUP210L	0.13174109959343624	0.13174109959343624	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+DNA methylation	1	feature_212134	0.12940506663761778	0.12940506663761778	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+DNA methylation	1	CUGBP2.12	-0.12681935378464704	0.12681935378464704	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+DNA methylation	1	TRIP13.10	-0.12609591690069766	0.12609591690069766	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+DNA methylation	1	feature_182338	0.125891544149621	0.125891544149621	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+DNA methylation	1	CALML3.5	-0.12359408221620465	0.12359408221620465	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+DNA methylation	1	CSNK1D.5	0.120267823349421	0.120267823349421	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+DNA methylation	1	feature_6911	-0.11974009413090421	0.11974009413090421	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+DNA methylation	1	KCNK7.1	-0.1173190080600439	0.1173190080600439	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+DNA methylation	1	CHST12.14	0.11492960843838809	0.11492960843838809	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+DNA methylation	1	TRIP13.2	-0.11445020338817587	0.11445020338817587	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+DNA methylation	1	feature_243982	-0.1112388883915646	0.1112388883915646	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+DNA methylation	1	DEAF1.18	0.11046688619683782	0.11046688619683782	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+DNA methylation	1	TRIP13.5	-0.10940337302817055	0.10940337302817055	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+DNA methylation	1	feature_107122	-0.10755473956566708	0.10755473956566708	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+DNA methylation	1	RAB40C.27	0.10191273258349681	0.10191273258349681	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+DNA methylation	1	feature_344114	-0.09882468221676986	0.09882468221676986	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+DNA methylation	1	feature_312266	-0.09860933704022297	0.09860933704022297	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+DNA methylation	1	ZDHHC1.9	0.09511907266855536	0.09511907266855536	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+DNA methylation	1	TBCD.120	-0.09436908793892405	0.09436908793892405	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+DNA methylation	1	SEC14L1.13	-0.08697896193450028	0.08697896193450028	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+DNA methylation	1	TRIP13.9	-0.0867132876305279	0.0867132876305279	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+DNA methylation	1	NKX2-1.13	0.0844288931170601	0.0844288931170601	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+DNA methylation	1	NUP210L.3	0.08324044916829916	0.08324044916829916	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+DNA methylation	1	CHST12.16	0.08251175358210808	0.08251175358210808	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+DNA methylation	1	feature_277469	0.0812376342721296	0.0812376342721296	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+DNA methylation	1	feature_223637	-0.07983494026898072	0.07983494026898072	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+DNA methylation	1	feature_356923	-0.07952701259011657	0.07952701259011657	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+DNA methylation	1	RAB40C.22	0.07699657525930526	0.07699657525930526	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+DNA methylation	1	AGAP1.169	-0.07438487995021388	0.07438487995021388	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+DNA methylation	1	KIAA0513.10	-0.07396158032387275	0.07396158032387275	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+DNA methylation	1	feature_283127	-0.07373730702294913	0.07373730702294913	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+DNA methylation	1	KCTD1.10	-0.0704123211109572	0.0704123211109572	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+DNA methylation	1	CASC2.5	-0.07017236553315581	0.07017236553315581	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+DNA methylation	1	ABCB1.2	-0.06946969608102664	0.06946969608102664	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+DNA methylation	1	LRRC17;FBXL13.5	-0.06808217717916214	0.06808217717916214	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+DNA methylation	1	feature_362935	-0.0666622252210186	0.0666622252210186	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+DNA methylation	1	MAGI1.8	-0.06270155355725089	0.06270155355725089	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+DNA methylation	1	FRMD6.23	-0.05932005882028218	0.05932005882028218	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+DNA methylation	1	C7orf20.43	-0.058270266127720315	0.058270266127720315	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+DNA methylation	1	RAPGEFL1.15	0.05549439558312643	0.05549439558312643	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+DNA methylation	1	SH3PXD2A.26	-0.05397745921780905	0.05397745921780905	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+DNA methylation	1	PTPRN2.398	-0.053599911732934276	0.053599911732934276	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+DNA methylation	1	KRT7.19	0.05088714976576919	0.05088714976576919	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+DNA methylation	1	feature_67653	0.04909152966697124	0.04909152966697124	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+DNA methylation	1	feature_148794	-0.04198422941458136	0.04198422941458136	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+DNA methylation	1	SLCO1A2.2	-0.04182044709946084	0.04182044709946084	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+DNA methylation	1	GLI2.72	0.041105562428536226	0.041105562428536226	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+DNA methylation	1	RAPGEFL1.8	0.040648780566147354	0.040648780566147354	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+DNA methylation	1	SLITRK3.22	-0.03759045781522232	0.03759045781522232	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+DNA methylation	1	WDR37.26	0.03591179229708148	0.03591179229708148	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+DNA methylation	1	feature_176408	-0.034952402026466454	0.034952402026466454	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+DNA methylation	1	GAS1.5	-0.0324702416872224	0.0324702416872224	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+DNA methylation	1	feature_198027	-0.03227729682531452	0.03227729682531452	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+DNA methylation	1	RUNX3.53	-0.03176852814140507	0.03176852814140507	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+DNA methylation	1	EDAR.1	-0.029847226324690453	0.029847226324690453	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+DNA methylation	1	GPR37L1.7	0.029089579142030957	0.029089579142030957	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+DNA methylation	1	ABLIM2.64	-0.027464045489212423	0.027464045489212423	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+DNA methylation	1	ACHE.1	-0.02536274329595245	0.02536274329595245	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+DNA methylation	1	AGAP1.47	-0.0225400539430342	0.0225400539430342	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+DNA methylation	1	SDK2.13	0.021496819026460248	0.021496819026460248	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+DNA methylation	1	feature_51157	0.016899170373279194	0.016899170373279194	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+DNA methylation	1	TM4SF19.9	-0.01659910598230251	0.01659910598230251	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+DNA methylation	1	feature_207128	-0.016473317000284073	0.016473317000284073	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+DNA methylation	1	feature_168488	-0.014101870539920805	0.014101870539920805	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+DNA methylation	1	BRDT.2	0.013283295774076014	0.013283295774076014	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+DNA methylation	1	ANGPT1.17	-0.013270654446937744	0.013270654446937744	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+DNA methylation	1	RAPGEFL1.17	0.012810513821414087	0.012810513821414087	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+DNA methylation	1	KCNT1.42	-0.012742717377906528	0.012742717377906528	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+DNA methylation	1	KCNT1.47	-0.012493775721947282	0.012493775721947282	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+DNA methylation	1	feature_29331	-0.01091900577152975	0.01091900577152975	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+DNA methylation	1	WWOX.12	-0.009163660436843229	0.009163660436843229	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+DNA methylation	1	HRNBP3.112	-0.00790478182266269	0.00790478182266269	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+DNA methylation	1	feature_82595	-0.0075718429715843005	0.0075718429715843005	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+DNA methylation	1	feature_27518	0.0058774278137266045	0.0058774278137266045	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+DNA methylation	1	KCNT1.35	-0.002891428856363449	0.002891428856363449	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+DNA methylation	1	feature_77773	-9.152961181026839e-4	9.152961181026839e-4	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+DNA methylation	2	feature_348516	-0.5436942308772887	0.5436942308772887	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+DNA methylation	2	feature_356133	-0.29656284842857894	0.29656284842857894	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+DNA methylation	2	feature_90515	-0.2876566627087074	0.2876566627087074	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+DNA methylation	2	feature_388837	-0.2720765692971002	0.2720765692971002	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+DNA methylation	2	IL20RA.12	-0.25173037868769216	0.25173037868769216	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+DNA methylation	2	feature_249110	-0.23918382064849406	0.23918382064849406	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+DNA methylation	2	feature_325412	-0.23572040682733386	0.23572040682733386	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+DNA methylation	2	feature_3263	-0.21576906802362317	0.21576906802362317	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+DNA methylation	2	feature_20962	-0.2096406244656393	0.2096406244656393	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+DNA methylation	2	feature_295235	-0.20202031909153922	0.20202031909153922	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+DNA methylation	2	feature_75825	-0.18615994398627006	0.18615994398627006	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+DNA methylation	2	feature_257988	-0.16959253124114057	0.16959253124114057	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+DNA methylation	2	MIR453;MIR485	-0.14255930411879708	0.14255930411879708	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+DNA methylation	2	ADARB2.311	-0.13329032968735685	0.13329032968735685	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+DNA methylation	2	MYT1L.86	-0.11504728545627257	0.11504728545627257	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+DNA methylation	2	feature_96529	-0.10488146929064596	0.10488146929064596	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+DNA methylation	2	C13orf16	-0.10296882563508017	0.10296882563508017	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+DNA methylation	2	feature_390889	-0.0800940115998869	0.0800940115998869	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+DNA methylation	2	WDR64	-0.07411906922719473	0.07411906922719473	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+DNA methylation	2	KCNQ2.28	-0.04825919667486192	0.04825919667486192	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+DNA methylation	2	feature_169696	-0.02720746902967963	0.02720746902967963	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+DNA methylation	2	PIGB.5	-0.020326623791808204	0.020326623791808204	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+DNA methylation	2	PDE6B.23	-0.018819809276515	0.018819809276515	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+DNA methylation	2	ADARB2.273	-0.009540230667927401	0.009540230667927401	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+DNA methylation	2	B4GALNT2.7	-0.00589111826632306	0.00589111826632306	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+RPPA	1	TFRC|TFRC	0.433966399858839	0.433966399858839	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+RPPA	1	PIK3CA |PI3K-p110-alpha	0.2868274373730457	0.2868274373730457	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+RPPA	1	NDRG1|NDRG1_pT346	0.2476379366989301	0.2476379366989301	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+RPPA	1	ERBB2|HER2	-0.22581727103570942	0.22581727103570942	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+RPPA	1	MAPK9|JNK2	-0.22069241317463328	0.22069241317463328	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+RPPA	1	IGFBP2|IGFBP2	0.2173032405833132	0.2173032405833132	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+RPPA	1	PRKCB|PKC-pan_BetaII_pS660	-0.21617461618362183	0.21617461618362183	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+RPPA	1	GAB2|GAB2	-0.20792487432347118	0.20792487432347118	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+RPPA	1	ERBB3|HER3	-0.20309539827903875	0.20309539827903875	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+RPPA	1	GSK3A GSK3B|GSK3-alpha-beta	0.1981289414239596	0.1981289414239596	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+RPPA	1	FOXM1|FoxM1	0.19492301568310713	0.19492301568310713	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+RPPA	1	EIF4EBP1|4E-BP1	0.1843016049360022	0.1843016049360022	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+RPPA	1	NOTCH1|Notch1	0.17499902796640415	0.17499902796640415	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+RPPA	1	INPP4B|INPP4B	-0.17142089696327897	0.17142089696327897	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+RPPA	1	ITGA2|CD49b	0.14012715417625599	0.14012715417625599	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+RPPA	1	GAPDH|GAPDH	0.13783757167316818	0.13783757167316818	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+RPPA	1	SERPINE1|PAI-1	0.1334859889378269	0.1334859889378269	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+RPPA	1	DVL3|Dvl3	0.1263256265343056	0.1263256265343056	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+RPPA	1	ERRFI1|MIG-6	-0.12453860958872114	0.12453860958872114	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+RPPA	1	CCNB1|Cyclin_B1	0.11743884529229301	0.11743884529229301	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+RPPA	1	PCNA|PCNA	0.10560000420202191	0.10560000420202191	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+RPPA	1	STAT3|STAT3_pY705	-0.10418099494468712	0.10418099494468712	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+RPPA	1	MTOR|mTOR_pS2448	-0.10278958710055491	0.10278958710055491	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+RPPA	1	KIT|c-Kit	-0.10238136667431093	0.10238136667431093	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+RPPA	1	PRKCA |PKC-alpha_pS657	-0.09731065434752253	0.09731065434752253	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+RPPA	1	ASNS|ASNS	0.09565931829167397	0.09565931829167397	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+RPPA	1	AKT1 AKT2 AKT3|Akt_pT308	0.09146475809150734	0.09146475809150734	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+RPPA	1	TSC2|Tuberin_pT1462	-0.08957275160782838	0.08957275160782838	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+RPPA	1	MSH6|MSH6	0.0812832148812856	0.0812832148812856	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+RPPA	1	BCL2L1|Bcl-xL	-0.07857391105681705	0.07857391105681705	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+RPPA	1	CHEK2|Chk2	0.05692069167767661	0.05692069167767661	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+RPPA	1	RPS6KA1|p90RSK	-0.05442954964292818	0.05442954964292818	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+RPPA	1	RPS6|S6_pS235_S236	-0.0515003192124445	0.0515003192124445	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+RPPA	1	CLDN7|Claudin-7	-0.051314042065314064	0.051314042065314064	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+RPPA	1	PRKCA |PKC-alpha	-0.042599454688067126	0.042599454688067126	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+RPPA	1	BAD|Bad_pS112	-0.0408090453269408	0.0408090453269408	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+RPPA	1	BECN1|Beclin	-0.03845425214359217	0.03845425214359217	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+RPPA	1	TUBA1B|Acetyl-a-Tubulin-Lys40	-0.03795251355648029	0.03795251355648029	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+RPPA	1	PDK1|PDK1_pS241	-0.03673774339741562	0.03673774339741562	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+RPPA	1	YAP1|YAP_pS127	-0.036377911107468346	0.036377911107468346	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+RPPA	1	MAPK1 MAPK3|MAPK_pT202_Y204	-0.036142806975306016	0.036142806975306016	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+RPPA	1	MSH2|MSH2	0.03402665842768689	0.03402665842768689	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+RPPA	1	ANXA1|Annexin-1	0.027295309117696308	0.027295309117696308	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+RPPA	1	TGM2|Transglutaminase	-0.02610051808280817	0.02610051808280817	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+RPPA	1	PRKCD|PKC-delta_pS664	-0.021971345013098772	0.021971345013098772	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+RPPA	1	XRCC1|XRCC1	0.01992393961409806	0.01992393961409806	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+RPPA	1	TP53|p53	0.016538952801829456	0.016538952801829456	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+RPPA	1	PARK7|DJ-1	-0.015424217213063314	0.015424217213063314	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+RPPA	1	CASP7|Caspase-7_cleavedD198	0.015141802664027447	0.015141802664027447	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+RPPA	1	NRG1|Heregulin	0.009674367686355314	0.009674367686355314	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+RPPA	2	PIK3R1 PIK3R2|PI3K-p85	-0.41062707141436294	0.41062707141436294	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+RPPA	2	CLDN7|Claudin-7	0.3649053583709861	0.3649053583709861	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+RPPA	2	PREX1|PREX1	-0.30621882101616016	0.30621882101616016	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+RPPA	2	LCK|Lck	-0.24467815465552098	0.24467815465552098	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+RPPA	2	SYK|Syk	-0.23540557930217126	0.23540557930217126	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+RPPA	2	CAV1|Caveolin-1	-0.21937922105383154	0.21937922105383154	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+RPPA	2	NOTCH1|Notch1	-0.19413365893812395	0.19413365893812395	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+RPPA	2	STAT5A|STAT5-alpha	-0.19011571185040355	0.19011571185040355	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+RPPA	2	ANXA1|Annexin-1	-0.1802164859028568	0.1802164859028568	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+RPPA	2	ATM|ATM	-0.16573047952720701	0.16573047952720701	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+RPPA	2	PRKAA1|AMPK_pT172	-0.1589443986804294	0.1589443986804294	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+RPPA	2	RB1|Rb_pS807_S811	0.1588153126681281	0.1588153126681281	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+RPPA	2	NF2|NF2	-0.15864943630071085	0.15864943630071085	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+RPPA	2	TGM2|Transglutaminase	-0.14304780291558383	0.14304780291558383	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+RPPA	2	RAB25|Rab25	0.1417569559661679	0.1417569559661679	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+RPPA	2	MYH9|Myosin-IIa-pS1943	-0.1359344354066776	0.1359344354066776	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+RPPA	2	CCNE2|Cyclin_E2	0.13322029165417318	0.13322029165417318	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+RPPA	2	AKT1 AKT2 AKT3|Akt_pS473	-0.12385931863859755	0.12385931863859755	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+RPPA	2	FASN|FASN	0.12298050711371689	0.12298050711371689	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+RPPA	2	MAPK14|p38_MAPK	-0.12002891357373954	0.12002891357373954	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+RPPA	2	CCNB1|Cyclin_B1	0.1176856931387374	0.1176856931387374	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+RPPA	2	KIT|c-Kit	0.10883772124694886	0.10883772124694886	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+RPPA	2	DIABLO|Smac	0.10294567145954567	0.10294567145954567	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+RPPA	2	CASP7|Caspase-7_cleavedD198	-0.10125587111383967	0.10125587111383967	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+RPPA	2	STK11|LKB1	-0.09382068987640987	0.09382068987640987	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+RPPA	2	PRKAA1|AMPK_alpha	0.09332676937761043	0.09332676937761043	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+RPPA	2	MSH6|MSH6	0.09309730175009098	0.09309730175009098	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+RPPA	2	MAPK1|ERK2	-0.07689159652898979	0.07689159652898979	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+RPPA	2	PEA15|PEA15	-0.06979776752055837	0.06979776752055837	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+RPPA	2	PRKCA |PKC-alpha_pS657	-0.06913985453452492	0.06913985453452492	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+RPPA	2	PRKCA |PKC-alpha	-0.06283673309438391	0.06283673309438391	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+RPPA	2	PIK3CA |PI3K-p110-alpha	-0.060291675045171016	0.060291675045171016	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+RPPA	2	PDK1|PDK1_pS241	-0.0452706256454695	0.0452706256454695	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+RPPA	2	CDH1|E-Cadherin	0.04428995437033871	0.04428995437033871	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+RPPA	2	RICTOR|Rictor	-0.04352414685638385	0.04352414685638385	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+RPPA	2	BAK1|Bak	-0.04341183322535082	0.04341183322535082	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+RPPA	2	BCL2|Bcl-2	-0.033890022251053316	0.033890022251053316	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+RPPA	2	XRCC1|XRCC1	0.03269291135614396	0.03269291135614396	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+RPPA	2	PTEN|PTEN	-0.03224756863088442	0.03224756863088442	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+RPPA	2	CDKN1B|p27	-0.03141286178262434	0.03141286178262434	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+RPPA	2	MTOR|mTOR_pS2448	-0.02821434412942217	0.02821434412942217	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+RPPA	2	ESR1|ER-alpha	-0.01782480038945409	0.01782480038945409	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+RPPA	2	BAP1|Bap1-c-4	0.017364447603778695	0.017364447603778695	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+RPPA	2	CHEK2|Chk2	0.014919091842206293	0.014919091842206293	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+RPPA	2	PGR|PR	-0.014135131936621671	0.014135131936621671	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+RPPA	2	MTOR|mTOR	-0.008989945129166127	0.008989945129166127	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+RPPA	2	FOXO3|FOXO3a_pS318_S321	-0.006190897167264937	0.006190897167264937	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+RPPA	2	IGFBP2|IGFBP2	0.005958369600780695	0.005958369600780695	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+RPPA	2	ACACA|ACC1	0.005570534783051876	0.005570534783051876	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+RPPA	2	EIF4EBP1|4E-BP1_pT37T46	0.005556197304380209	0.005556197304380209	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+Y	1	LUAD	-0.7071067811865477	0.7071067811865477	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+Y	1	LUSC	0.7071067811865475	0.7071067811865475	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+Y	2	LUAD	0.7071067811865476	0.7071067811865476	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only
+Y	2	LUSC	-0.7071067811865474	0.7071067811865474	TRUE	NA	Final DIABLO multiblock sPLS-DA	DIABLO	full_data_final_model_for_interpretation_only

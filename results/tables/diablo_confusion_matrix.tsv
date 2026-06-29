@@ -1,0 +1,5 @@
+model_label	integration	actual	predicted	n
+DIABLO multiblock sPLS-DA	DIABLO	LUAD	LUAD	311
+DIABLO multiblock sPLS-DA	DIABLO	LUAD	LUSC	5
+DIABLO multiblock sPLS-DA	DIABLO	LUSC	LUAD	34
+DIABLO multiblock sPLS-DA	DIABLO	LUSC	LUSC	217

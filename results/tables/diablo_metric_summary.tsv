@@ -1,0 +1,2 @@
+model_label	mean_ROC_AUC	sd_ROC_AUC	mean_balanced_accuracy	sd_balanced_accuracy	mean_macro_F1	sd_macro_F1	mean_F1_LUAD	mean_F1_LUSC
+DIABLO multiblock sPLS-DA	0.9687	0.0228	0.9245	0.033	0.9293	0.0322	0.9413	0.9172

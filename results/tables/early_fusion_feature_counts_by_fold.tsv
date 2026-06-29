@@ -1,0 +1,16 @@
+layer	n_features_used	fold	model_label
+mRNA	3000	1	Early fusion + Elastic Net
+DNA methylation	5000	1	Early fusion + Elastic Net
+RPPA	189	1	Early fusion + Elastic Net
+mRNA	3000	2	Early fusion + Elastic Net
+DNA methylation	5000	2	Early fusion + Elastic Net
+RPPA	189	2	Early fusion + Elastic Net
+mRNA	3000	3	Early fusion + Elastic Net
+DNA methylation	5000	3	Early fusion + Elastic Net
+RPPA	189	3	Early fusion + Elastic Net
+mRNA	3000	4	Early fusion + Elastic Net
+DNA methylation	5000	4	Early fusion + Elastic Net
+RPPA	189	4	Early fusion + Elastic Net
+mRNA	3000	5	Early fusion + Elastic Net
+DNA methylation	5000	5	Early fusion + Elastic Net
+RPPA	189	5	Early fusion + Elastic Net

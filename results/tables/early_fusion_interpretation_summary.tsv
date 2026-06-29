@@ -1,0 +1,6 @@
+section	conclusion
+Early-fusion strategy	mRNA, DNA methylation and RPPA were preprocessed separately inside each CV fold and then concatenated into one integrated feature matrix.
+Leakage control	Median imputation, scaling and top-variable filtering were fitted only on the training fold, then applied to the held-out fold.
+Performance summary	Early-fusion Elastic Net achieved ROC-AUC = 0.989, balanced accuracy = 0.956, and macro-F1 = 0.959.
+Comparison purpose	When compared with available single-omics baselines, the top ROC-AUC model was DNA methylation + Random Forest with ROC-AUC = 0.998.
+Next analysis step	The next step is DIABLO, which performs supervised multi-block integration and feature selection instead of simple concatenation.

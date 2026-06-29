@@ -1,0 +1,2 @@
+model_label	model	integration	n_samples	ncomp	prediction_distance	ROC_AUC	accuracy	balanced_accuracy	F1_LUAD	F1_LUSC	macro_F1	sensitivity_LUSC	specificity_LUAD
+DIABLO multiblock sPLS-DA	block.splsda	DIABLO	567	2	centroids.dist	0.9688209188562207	0.9312169312169312	0.9243595239295981	0.9409984871406959	0.9175475687103593	0.9292730279255276	0.8645418326693227	0.9841772151898734

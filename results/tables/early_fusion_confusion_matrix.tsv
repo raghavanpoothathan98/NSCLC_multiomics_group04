@@ -1,0 +1,5 @@
+actual	predicted	n	model_label
+LUAD	LUAD	311	Early fusion + Elastic Net
+LUAD	LUSC	5	Early fusion + Elastic Net
+LUSC	LUAD	18	Early fusion + Elastic Net
+LUSC	LUSC	233	Early fusion + Elastic Net

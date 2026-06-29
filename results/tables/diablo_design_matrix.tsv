@@ -1,0 +1,4 @@
+block	mRNA	DNA methylation	RPPA
+mRNA	0	0.1	0.1
+DNA methylation	0.1	0	0.1
+RPPA	0.1	0.1	0

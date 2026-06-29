@@ -1,0 +1,9 @@
+layer	component	n_unique_selected_features	n_features_selected_in_all_folds
+DNA methylation	1	121	42
+DNA methylation	2	58	4
+RPPA	1	58	25
+RPPA	2	72	10
+Y	1	2	2
+Y	2	2	2
+mRNA	1	116	10
+mRNA	2	51	8

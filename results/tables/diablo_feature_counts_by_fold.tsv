@@ -1,0 +1,16 @@
+layer	n_features_used	fold	model_label
+mRNA	500	1	DIABLO multiblock sPLS-DA
+DNA methylation	1000	1	DIABLO multiblock sPLS-DA
+RPPA	189	1	DIABLO multiblock sPLS-DA
+mRNA	500	2	DIABLO multiblock sPLS-DA
+DNA methylation	1000	2	DIABLO multiblock sPLS-DA
+RPPA	189	2	DIABLO multiblock sPLS-DA
+mRNA	500	3	DIABLO multiblock sPLS-DA
+DNA methylation	1000	3	DIABLO multiblock sPLS-DA
+RPPA	189	3	DIABLO multiblock sPLS-DA
+mRNA	500	4	DIABLO multiblock sPLS-DA
+DNA methylation	1000	4	DIABLO multiblock sPLS-DA
+RPPA	189	4	DIABLO multiblock sPLS-DA
+mRNA	500	5	DIABLO multiblock sPLS-DA
+DNA methylation	1000	5	DIABLO multiblock sPLS-DA
+RPPA	189	5	DIABLO multiblock sPLS-DA

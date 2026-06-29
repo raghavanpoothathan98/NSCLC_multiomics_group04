@@ -1,0 +1,2 @@
+model_label	mean_ROC_AUC	sd_ROC_AUC	mean_balanced_accuracy	sd_balanced_accuracy	mean_macro_F1	sd_macro_F1	mean_F1_LUAD	mean_F1_LUSC
+Early fusion + Elastic Net	0.9875	0.0133	0.9563	0.0212	0.9587	0.0204	0.9645	0.9529
